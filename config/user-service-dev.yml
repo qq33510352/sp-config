@@ -5,7 +5,7 @@ sp:
 spring:
   application:
     name: user-service
-  #禁止配置中心的配置信息覆盖客户端配置
+  #禁止配置中心的配置信息覆盖客户端配置    默认配置中心配置优先级高,配置中心配置会覆盖客户端的所有配置,包括命令行参数配置,这样我们在item-service和order-service中配置的端口号启动参数会无效
   cloud:
     config:
       override-none: true
