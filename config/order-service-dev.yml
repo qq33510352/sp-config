@@ -1,19 +1,17 @@
 spring:
   application:
     name: order-service
-#关闭配置文件的覆盖
   cloud:
     config:
       override-none: true
-      
+
 server:
-  port: 8201
+  port: 8201  
   
-#配置eureka
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
+      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
       
 feign:
   hystrix:
@@ -24,3 +22,4 @@ management:
     web:
       exposure:
         include: hystrix.stream
+        
