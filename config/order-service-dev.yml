@@ -1,7 +1,10 @@
 spring:
   application:
     name: order-service
-    
+#关闭配置文件的覆盖
+  cloud:
+    config:
+      override-none: true
     
 server:
   port: 8201

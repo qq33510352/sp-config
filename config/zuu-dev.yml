@@ -1,7 +1,10 @@
 spring:
   application:
     name: zuul
-    
+#关闭配置文件的覆盖
+  cloud:
+    config:
+      override-none: true    
     
 server:  port: 3001
   
