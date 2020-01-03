@@ -5,7 +5,7 @@ sp:
 spring:
   application:
     name: user-service
-  #关闭配置文件的覆盖
+  #禁止配置中心的配置信息覆盖客户端配置
   cloud:
     config:
       override-none: true
