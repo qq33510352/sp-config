@@ -1,0 +1,4 @@
+#配置  cloud服务名spring:  application:    name: item-service
+#配置服务端口号
+server:
+  port: 8001  #配置eurekaeureka:  client:    service-url:      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
