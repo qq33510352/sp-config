@@ -7,7 +7,13 @@ spring:
 #关闭配置文件的覆盖
   cloud:
     config:
-      override-none: true    
+      override-none: true   
+#bus连接消息队列  
+  rabbitmq:
+    host: 192.168.64.140
+    port: 5672
+    username: admin
+    password: admin 
   
 eureka:  client:    service-url:      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
       
